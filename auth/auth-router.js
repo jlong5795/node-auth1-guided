@@ -5,6 +5,8 @@ const Users = require('../users/users-model.js');
 router.post('/register', (req, res) => {
   let user = req.body;
 
+  const hash = 
+
   Users.add(user)
     .then(saved => {
       res.status(201).json(saved);
